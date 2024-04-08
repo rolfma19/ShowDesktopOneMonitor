@@ -61,13 +61,15 @@ namespace ShowDesktopOneMonitor
             Array.Resize(ref PrevStateByScreen, Screen.AllScreens.Length);
 
             // restore if all windows are minimized AND prev state differs only by windows style
-            if (newWindowIDs.All(x => x.WindowStyle != WindowStyles.Visible) && PrevStateByScreen[screenIdx] != null 
-                                        && DoesPrevStateDiffersOnlyByWindowsStyle(newWindowIDs, screenIdx)) {
-                restoreAllWindows(screenIdx);
-            }
-            else {
-                minimizeAllWindows(newWindowIDs, screenIdx);
-            }           
+            //if (newWindowIDs.All(x => x.WindowStyle != WindowStyles.Visible) && PrevStateByScreen[screenIdx] != null 
+            //                            && DoesPrevStateDiffersOnlyByWindowsStyle(newWindowIDs, screenIdx)) {
+            //    restoreAllWindows(screenIdx);
+            //}
+            //else {
+            //    minimizeAllWindows(newWindowIDs, screenIdx);
+            //}
+            // minimize windows only 
+            minimizeAllWindows(newWindowIDs, screenIdx);
         }
         private void minimizeAllWindows (List<DesktopWindowID> windowList, int screenIdx)
         {

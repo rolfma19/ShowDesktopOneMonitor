@@ -6,11 +6,12 @@
       <Value Profile="(Default)">D</Value>
     </Setting>
     <Setting Name="KeyModifiers" Type="ShowDesktopOneMonitor.KeyModifiers[]" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfKeyModifiers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;KeyModifiers&gt;Windows&lt;/KeyModifiers&gt;
-  &lt;KeyModifiers&gt;Shift&lt;/KeyModifiers&gt;
-&lt;/ArrayOfKeyModifiers&gt;</Value>
+      <Value Profile="(Default)">
+                    &lt;ArrayOfKeyModifiers xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+                        &lt;KeyModifiers&gt;Windows&lt;/KeyModifiers&gt;
+                        &lt;KeyModifiers&gt;Shift&lt;/KeyModifiers&gt;
+                    &lt;/ArrayOfKeyModifiers&gt;
+                </Value>
     </Setting>
   </Settings>
 </SettingsFile>
